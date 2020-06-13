@@ -25,7 +25,7 @@ export const toArabic = (
 
 /**
  * 
- * @param num number or a string that contain the number to be converted
+ * @param num a string that contain the number to be converted
  * @param intOnly remove any character that is not a digit
  */
 export const fromArabic = (

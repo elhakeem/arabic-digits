@@ -21,7 +21,7 @@ exports.toArabic = function (num, intOnly) {
 };
 /**
  *
- * @param num number or a string that contain the number to be converted
+ * @param num a string that contain the number to be converted
  * @param intOnly remove any character that is not a digit
  */
 exports.fromArabic = function (num, intOnly) {
