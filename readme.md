@@ -1,15 +1,27 @@
-A light-weight utility to convert arabic digits to english or modern digits.
+A light-weight utility to convert arabic digits to english or modern digits and vice versa.
 the library contains two methods `toArabic`, and `fromArabic`.
+
+### Installation
+```java
+$ npm i arabic-digits
+```
+
+### Usage
+```javascript
+import {toArabic} from 'arabic-digits';
+
+toArabic(num, intOnly)
+```
 
 ### Options
 options are the same in both methods.
 
-```
+```javascript
 num: string
 ```
 a string containing the number to be converted. in `toArabic` method this parameter could be string | number.
 
-```
+```javascript
 intOnly: boolean
 ```
 if true the method will remove any other character that is not a digit.

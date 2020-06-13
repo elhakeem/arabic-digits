@@ -1,7 +1,7 @@
 {
   "name": "arabic-digits",
   "version": "1.0.1",
-  "description": "A light-weight utility to convert arabic digits to english or modern digits",
+  "description": "A light-weight utility to convert arabic digits to english or modern digits and vice versa.",
   "main": "index.js",
   "repository": {
     "url": "https://github.com/elhakeem/arabic-digits"
