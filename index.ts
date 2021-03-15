@@ -2,7 +2,7 @@ const engishDigits = /[0-9]/g;
 const arabicDigits = /[٠-٩]/g;
 const notEngishDigits = /[^0-9]/g;
 const notArabicDigits = /[^٠-٩]/g;
-const gap = 1584;
+const gap = 1584; // charcode gap between 0 and ٠;
 
 /**
  * 
@@ -41,3 +41,11 @@ export const fromArabic = (
         (match:string) => String.fromCharCode( match.charCodeAt(0) - gap )
     )
 }
+
+/**
+ * 
+ * @param num a string that contain the number to be tested
+ */
+export const hasArabic = (num: string): RegExpMatchArray => {
+    return String(num).match(arabicDigits);
+};

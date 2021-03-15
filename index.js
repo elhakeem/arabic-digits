@@ -1,11 +1,11 @@
 "use strict";
 exports.__esModule = true;
-exports.fromArabic = exports.toArabic = void 0;
+exports.hasArabic = exports.fromArabic = exports.toArabic = void 0;
 var engishDigits = /[0-9]/g;
 var arabicDigits = /[٠-٩]/g;
 var notEngishDigits = /[^0-9]/g;
 var notArabicDigits = /[^٠-٩]/g;
-var gap = 1584;
+var gap = 1584; // charcode gap between 0 and ٠;
 /**
  *
  * @param num number or a string that contain the number to be converted
@@ -31,4 +31,11 @@ exports.fromArabic = function (num, intOnly) {
     }
     return String(num)
         .replace(arabicDigits, function (match) { return String.fromCharCode(match.charCodeAt(0) - gap); });
+};
+/**
+ *
+ * @param num a string that contain the number to be tested
+ */
+exports.hasArabic = function (num) {
+    return String(num).match(arabicDigits);
 };
