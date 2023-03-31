@@ -2,8 +2,8 @@ A light-weight utility to convert arabic digits to english or modern digits and 
 the library contains two methods `toArabic`, and `fromArabic`.
 
 ### Installation
-```java
-$ npm i arabic-digits
+```shell
+$ npm i arabic-digits // or yarn or pnpm
 ```
 
 ### Usage
@@ -14,7 +14,7 @@ toArabic(num, intOnly)
 ```
 
 ### Options
-options are the same in both methods.
+options applies to the two methods.
 
 ```javascript
 num: string
@@ -28,32 +28,32 @@ if true the method will remove any other character that is not a digit.
 
 
 ### Eamples
-passing number.
+passing a number.
 ```javascript
 import {toArabic} from 'arabic-digits';
 
 toArabic(2020) //٢٠٢٠
 ```
 
-passing string.
+passing a string.
 ```javascript
 import {toArabic} from 'arabic-digits';
 
 toArabic("2020") //٢٠٢٠
 ```
 
-passing mixed string.
+passing a mixed string.
 ```javascript
 import {toArabic} from 'arabic-digits';
 
 toArabic("22 Years Old") //٢٢ Years Old
 ```
 
-passing mixed string and parsing it.
+passing a mixed string with parsing.
 ```javascript
 import {toArabic} from 'arabic-digits';
 
 toArabic("22 Years Old", true) //٢٢
 ```
 
-all the above examples applies on `fromArabic` also. 
+all the above examples applies to `fromArabic` also. 
