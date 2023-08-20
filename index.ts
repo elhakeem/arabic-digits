@@ -46,6 +46,6 @@ export const fromArabic = (
  * 
  * @param num a string that contain the number to be tested
  */
-export const hasArabic = (num: string): RegExpMatchArray => {
+export const hasArabic = (num: string): RegExpMatchArray | null => {
     return String(num).match(arabicDigits);
 };
